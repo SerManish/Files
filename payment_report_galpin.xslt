@@ -13,7 +13,7 @@
 		</head>
 		<body>
 				<br /><br />
-				<b>Daily Close</b>
+				<b>Daily Close [Github]</b>
 				<br />
 				<b>
 					<u>
