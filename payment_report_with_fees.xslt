@@ -13,7 +13,7 @@
 		</head>
 		<body>
 				<br /><br />
-				<b>Daily Close</b>
+				<b>Daily Close [Fees]</b>
 				<br />
 				<b>
 					<u>
