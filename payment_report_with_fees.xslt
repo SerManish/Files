@@ -235,6 +235,7 @@
 					<xsl:value-of select="format-number(sum(SubTotalAmount), '$#0.00;($#0.00)')" />
 				</i>
 			</td>
+			<td colspan="2"></td>
 		</tr>
 	</xsl:template>
 	
@@ -250,6 +251,7 @@
 					<xsl:value-of select="format-number(sum(SubTotalAmount), '$#0.00;($#0.00)')" />
 				</i>
 			</td>
+			<td colspan="2"></td>
 		</tr>
 	</xsl:template>
 	
