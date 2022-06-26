@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:import href="https://payment-report-xslt.s3.ap-south-1.amazonaws.com/payment_report_total.xslt" />
+	<xsl:import href="https://raw.githubusercontent.com/SerManish/Files/main/payment_report_with_fees_total.xslt" />
 	<xsl:template match="/">
 	<html>
 		<head>
@@ -230,7 +230,7 @@
 					SubTotal: 
 				</i>
 			</td>
-			<td align="center" colspan="3" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
+			<td align="left" colspan="3" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
 				<i>
 					<xsl:value-of select="format-number(sum(SubTotalAmount), '$#0.00;($#0.00)')" />
 				</i>
@@ -245,7 +245,7 @@
 					SubTotal: 
 				</i>
 			</td>
-			<td align="center" colspan="3" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
+			<td align="left" colspan="3" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
 				<i>
 					<xsl:value-of select="format-number(sum(SubTotalAmount), '$#0.00;($#0.00)')" />
 				</i>
