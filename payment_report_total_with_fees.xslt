@@ -283,13 +283,6 @@
 			</xsl:variable>
 			<xsl:variable name="disctotaltillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/DISCTotal)" />
 			
-			<xsl:variable name="paypalexpresstotal">
-				<xsl:call-template name="get-number-from-string">
-					<xsl:with-param name="input" select="current()/PAYPALEXPRESSTotal"/>
-				</xsl:call-template>
-			</xsl:variable>
-			<xsl:variable name="paypalexpresstotaltillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/PAYPALEXPRESSTotal)" />
-			
 			<xsl:variable name="debittotal">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/DEBITTotal"/>
@@ -426,6 +419,28 @@
 	                            <xsl:value-of select="format-number($swipertotalamex, '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
 	                    <tr>
 	                        <td align="left">
 	                            <i>
@@ -478,6 +493,28 @@
 	                            <xsl:value-of select="format-number($swipertotalvisa + $swipertotalmast + $swipertotaldisc , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
 	                    <tr>
 	                        <td align="left">
 	                                <i>
@@ -510,6 +547,28 @@
 	                            <xsl:value-of select="format-number($swipertotalamex + $swipertotalvisa + $swipertotalmast + $swipertotaldisc + $swipertotaldebit, '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Total Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Total Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
 	                </table>
 	            </td>
 	            <td  width = "50%"/>
@@ -540,6 +599,28 @@
 	                        </td>
 	                        <td align="left">
 	                            <xsl:value-of select="format-number($onmanualamex, '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -594,6 +675,28 @@
 	                            <xsl:value-of select="format-number($onmanualvisa + $onmanualmast + $onmanualdisc, '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
 	                    <tr>
 	                            <td align="left">
 	                                <i>
@@ -623,7 +726,29 @@
 	                            </i>
 	                        </td>
 	                        <td align="left" style="border-top:solid 1px #000000;">
-	                            <xsl:value-of select="format-number($onmanualamex + $onmanualvisa + $onmanualmast + $onmanualdisc + $paypalexpresstotal + $onmanualdebit, '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualamex + $onmanualvisa + $onmanualmast + $onmanualdisc + $onmanualdebit, '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Total Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Total Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                </table>
@@ -659,6 +784,28 @@
 			                            <xsl:value-of select="format-number($amextotal, '$#0.00;($#0.00)')" />
 			                        </td>
 			                    </tr>
+								<tr>
+									<td align="left" style="padding-left:10px;">
+										<i>
+											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+											Fees
+										</i>
+									</td>
+									<td align="left">
+										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+									</td>
+								</tr>
+								<tr>
+									<td align="left" style="padding-left:10px;">
+										<i>
+											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+											Net Deposit
+										</i>
+									</td>
+									<td align="left">
+										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+									</td>
+								</tr>
 			                    <tr>
 			                        <td align="left">
 			                            <i>
@@ -711,6 +858,28 @@
 			                            <xsl:value-of select="format-number($visatotal + $mastertotal + $disctotal, '$#0.00;($#0.00)')" />
 			                        </td>
 			                    </tr>
+								<tr>
+									<td align="left" style="padding-left:10px;">
+										<i>
+											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+											Fees
+										</i>
+									</td>
+									<td align="left">
+										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+									</td>
+								</tr>
+								<tr>
+									<td align="left" style="padding-left:10px;">
+										<i>
+											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+											Net Deposit
+										</i>
+									</td>
+									<td align="left">
+										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+									</td>
+								</tr>
 			                    <tr>
 			                            <td align="left">
 			                                <i>
@@ -808,6 +977,28 @@
 			                            <xsl:value-of select="format-number($departmenttotal , '$#0.00;($#0.00)')" />
 			                        </td>
 			                    </tr>
+								<tr>
+									<td align="left" style="padding-left:10px;">
+										<i>
+											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+											Total Fees
+										</i>
+									</td>
+									<td align="left">
+										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+									</td>
+								</tr>
+								<tr>
+									<td align="left" style="padding-left:10px;">
+										<i>
+											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+											Total Net Deposit
+										</i>
+									</td>
+									<td align="left">
+										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+									</td>
+								</tr>
 			                </table>
 			            </td>
 	            </xsl:if>
@@ -838,6 +1029,28 @@
 	                        </td>
 	                        <td align="left">
 	                            <xsl:value-of select="format-number($amextotaltillnow, '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -890,6 +1103,28 @@
 	                        </td>
 	                        <td align="left" style="">
 	                            <xsl:value-of select="format-number($visatotaltillnow + $mastertotaltillnow + $disctotaltillnow, '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -987,6 +1222,28 @@
 	                        </td>
 	                        <td align="left" style="border-top:solid 1px #000000;">
 	                            <xsl:value-of select="format-number($departmenttotaltillnow, '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Total Fees
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                        </td>
+	                    </tr>
+						<tr>
+	                        <td align="left" style="padding-left:10px;">
+	                            <i>
+	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	                                Total Net Deposit
+	                            </i>
+	                        </td>
+	                        <td align="left">
+	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                </table>
