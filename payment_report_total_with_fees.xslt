@@ -420,7 +420,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Fees
@@ -431,7 +431,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Net Deposit
@@ -494,7 +494,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Fees
@@ -505,7 +505,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Net Deposit
@@ -548,7 +548,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Total Fees
@@ -559,7 +559,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Total Net Deposit
@@ -602,7 +602,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Fees
@@ -613,7 +613,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Net Deposit
@@ -676,7 +676,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Fees
@@ -687,7 +687,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Net Deposit
@@ -730,7 +730,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Total Fees
@@ -741,7 +741,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Total Net Deposit
@@ -785,7 +785,7 @@
 			                        </td>
 			                    </tr>
 								<tr>
-									<td align="left" style="padding-left:10px;">
+									<td align="left" style="padding-left:20px;">
 										<i>
 											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 											Fees
@@ -796,7 +796,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td align="left" style="padding-left:10px;">
+									<td align="left" style="padding-left:20px;">
 										<i>
 											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 											Net Deposit
@@ -859,7 +859,7 @@
 			                        </td>
 			                    </tr>
 								<tr>
-									<td align="left" style="padding-left:10px;">
+									<td align="left" style="padding-left:20px;">
 										<i>
 											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 											Fees
@@ -870,7 +870,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td align="left" style="padding-left:10px;">
+									<td align="left" style="padding-left:20px;">
 										<i>
 											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 											Net Deposit
@@ -978,7 +978,7 @@
 			                        </td>
 			                    </tr>
 								<tr>
-									<td align="left" style="padding-left:10px;">
+									<td align="left" style="padding-left:20px;">
 										<i>
 											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 											Total Fees
@@ -989,7 +989,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td align="left" style="padding-left:10px;">
+									<td align="left" style="padding-left:20px;">
 										<i>
 											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 											Total Net Deposit
@@ -1032,7 +1032,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Fees
@@ -1043,7 +1043,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Net Deposit
@@ -1106,7 +1106,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Fees
@@ -1117,7 +1117,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Net Deposit
@@ -1225,7 +1225,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Total Fees
@@ -1236,7 +1236,7 @@
 	                        </td>
 	                    </tr>
 						<tr>
-	                        <td align="left" style="padding-left:10px;">
+	                        <td align="left" style="padding-left:20px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
 	                                Total Net Deposit
