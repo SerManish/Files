@@ -230,7 +230,7 @@
 					SubTotal: 
 				</i>
 			</td>
-			<td align="left" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
+			<td align="center" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
 				<i>
 					<xsl:value-of select="format-number(sum(SubTotalAmount), '$#0.00;($#0.00)')" />
 				</i>
@@ -246,7 +246,7 @@
 					SubTotal: 
 				</i>
 			</td>
-			<td align="left" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
+			<td align="center" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
 				<i>
 					<xsl:value-of select="format-number(sum(SubTotalAmount), '$#0.00;($#0.00)')" />
 				</i>
