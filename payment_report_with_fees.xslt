@@ -167,7 +167,7 @@
 			<td align="center" style="width: 100px;">
 				<xsl:value-of select="PaymentType" />
 			</td>
-			<td align="center" style="width: 200px;">
+			<td align="center" style="width: 100px;">
 				<xsl:value-of select="CCNumber" />
 			</td>
 			<td align="center" style="width: 60px;">
@@ -208,7 +208,7 @@
 			<td align="center" style="width: 100px;">
 				<xsl:value-of select="PaymentType" />
 			</td>
-			<td align="center" style="width: 200px;">
+			<td align="center" style="width: 100px;">
 				<xsl:value-of select="CCNumber" />
 			</td>
 			<td align="center" style="width: 60px;">
