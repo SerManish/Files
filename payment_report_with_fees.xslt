@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:import href="https://payment-report-xslt.s3.ap-south-1.amazonaws.com/payment_report_total.xslt" />
+	<xsl:import href="https://raw.githubusercontent.com/SerManish/Files/main/payment_report_with_fees_total.xslt" />
 	<xsl:template match="/">
 	<html>
 		<head>
@@ -99,8 +99,9 @@
 			<th style="color:#FFFFFF;">CC Type</th>
 			<th style="color:#FFFFFF;">Payment Type</th>
 			<th style="color:#FFFFFF;">Card No.</th>
-			<th style="color:#FFFFFF;">Amount</th>
-			
+			<th style="color:#FFFFFF;">Gross Amount</th>
+			<th style="color:#FFFFFF;">Fee</th>
+			<th style="color:#FFFFFF;">Net</th>
 		</tr>
 	</xsl:template>
 	<xsl:template name="transaction_table_body">
@@ -172,6 +173,12 @@
 			<td align="center" style="width: 60px;">
 				<xsl:value-of select="format-number(sum(TransactionAmount), '$#0.00;($#0.00)')" />
 			</td>
+			<td align="center" style="width: 60px;">
+				<xsl:value-of select="format-number(sum(SurchargesAmount), '$#0.00;($#0.00)')" />
+			</td>
+			<td align="center" style="width: 60px;">
+				<xsl:value-of select="format-number(sum(RoAmount), '$#0.00;($#0.00)')" />
+			</td>
 		</tr>
 	</xsl:template>
 
@@ -207,17 +214,23 @@
 			<td align="center" style="width: 60px;">
 				<xsl:value-of select="format-number(sum(TransactionAmount), '$#0.00;($#0.00)')" />
 			</td>
+			<td align="center" style="width: 60px;">
+				<xsl:value-of select="format-number(sum(SurchargesAmount), '$#0.00;($#0.00)')" />
+			</td>
+			<td align="center" style="width: 60px;">
+				<xsl:value-of select="format-number(sum(RoAmount), '$#0.00;($#0.00)')" />
+			</td>
 		</tr>
 	</xsl:template>
 	
 	<xsl:template name="transaction_table_body_subtotal_even_row">
 		<tr bgcolor="#DDDDDD" height="25px">
-			<td align="right" colspan="8" style="padding-right:35px;">
+			<td align="right" colspan="9" style="padding-right:35px;">
 				<i>
 					SubTotal: 
 				</i>
 			</td>
-			<td align="center" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
+			<td align="center" colspan="3" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
 				<i>
 					<xsl:value-of select="format-number(sum(SubTotalAmount), '$#0.00;($#0.00)')" />
 				</i>
@@ -227,12 +240,12 @@
 	
 	<xsl:template name="transaction_table_body_subtotal_odd_row">
 		<tr bgcolor="#FFFFFF" height="25px">
-			<td align="right" colspan="8" style="padding-right:35px;">
+			<td align="right" colspan="9" style="padding-right:35px;">
 				<i>
 					SubTotal: 
 				</i>
 			</td>
-			<td align="center" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
+			<td align="center" colspan="3" style="border-top:solid 1px #000000; border-bottom:double medium #000000;">
 				<i>
 					<xsl:value-of select="format-number(sum(SubTotalAmount), '$#0.00;($#0.00)')" />
 				</i>
@@ -242,7 +255,7 @@
 	
 	<xsl:template name="transaction_table_body_refunddescription_even_row">
 		<tr bgcolor="#DDDDDD">
-			<td colspan="9" style="padding: 3px 10px;">
+			<td colspan="12" style="padding: 3px 10px;">
 				<i>
 					<xsl:value-of select="RefundDescription" />
 					<xsl:text>, RO Total Amount </xsl:text>
@@ -254,7 +267,7 @@
 	
 	<xsl:template name="transaction_table_body_refunddescription_odd_row">
 		<tr bgcolor="#FFFFFF">
-			<td colspan="9" style="padding: 3px 10px;">
+			<td colspan="12" style="padding: 3px 10px;">
 				<i>
 					<xsl:value-of select="RefundDescription" />
 					<xsl:text>, RO Total Amount </xsl:text>
@@ -266,7 +279,7 @@
 	
 	<xsl:template name="transaction_table_body_service_advisor_even_row">
 		<tr bgcolor="#DDDDDD" height="25px">
-			<td align="left" colspan="9" style="padding-right:10px;">
+			<td align="left" colspan="12" style="padding-right:10px;">
 				<i> <xsl:value-of select="Role" />: </i>
 				<b><xsl:value-of select="Name" /></b>
 			</td>
@@ -275,7 +288,7 @@
 	
 	<xsl:template name="transaction_table_body_service_advisor_odd_row">
 		<tr bgcolor="#FFFFFF" height="25px">
-			<td align="left" colspan="9" style="padding-right:10px;">
+			<td align="left" colspan="12" style="padding-right:10px;">
 				<i> <xsl:value-of select="Role" />: </i>
 				<b><xsl:value-of select="Name" /></b>
 			</td>

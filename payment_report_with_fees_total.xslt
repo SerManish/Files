@@ -1,6 +1,5 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template name="final_totals_table_body">
-        <xsl:variable name="isPaypalExpressEnabled" select="/*/IsPaypalExpressEnabled" />
         <xsl:variable name="isCashEnabled" select="/*/IsCashEnabled" />
         <xsl:variable name="isCheckEnabled" select="/*/IsCheckEnabled" />
         <xsl:variable name="isGuaranteedCheckEnabled" select="/*/IsGuaranteedCheckEnabled" />
@@ -490,19 +489,6 @@
                                 <xsl:value-of select="format-number($onmanualamex, '$#0.00;($#0.00)')" />
                             </td>
                         </tr>
-                        <xsl:if test="$isPaypalExpressEnabled=1">
-                            <tr>
-                                <td align="left">
-                                    <i>
-                                        <xsl:text disable-output-escaping="yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</xsl:text>
-                                        Total for Paypal Express (P)
-                                    </i>
-                                </td>
-                                <td align="left">
-                                    <xsl:value-of select="format-number($paypalexpresstotal, '$#0.00;($#0.00)')" />
-                                </td>
-                            </tr>
-                        </xsl:if>
                         <tr>
                             <td align="left">
                                 <i>
@@ -580,11 +566,7 @@
                         <tr>
                             <td align="left">
                                 <i>
-                                    <span>Total Online/Manual Charges (A+</span>
-                                    <xsl:if test="$isPaypalExpressEnabled=1">
-                                        <span>P+</span>
-                                    </xsl:if>
-                                    <span>V+M+D+B)</span>
+                                    <span>Total Online/Manual Charges (A+V+M+D+B)</span>
                                 </i>
                             </td>
                             <td align="left" style="border-top:solid 1px #000000;">
@@ -632,19 +614,6 @@
                                     <xsl:value-of select="format-number($amextotal, '$#0.00;($#0.00)')" />
                                 </td>
                             </tr>
-                            <xsl:if test="$isPaypalExpressEnabled=1">
-                                <tr>
-                                    <td align="left">
-                                        <i>
-                                            <xsl:text disable-output-escaping="yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</xsl:text>
-                                            Total for Paypal Express (P)
-                                        </i>
-                                    </td>
-                                    <td align="left">
-                                        <xsl:value-of select="format-number($paypalexpresstotal, '$#0.00;($#0.00)')" />
-                                    </td>
-                                </tr>
-                            </xsl:if>
                             <tr>
                                 <td align="left">
                                     <i>
@@ -774,11 +743,7 @@
                             <tr style="border-bottom:solid 1px #000000; border-top: solid 1px black;">
                                 <td align="left">
                                     <i>
-                                        <span>Total Payments (A+</span>
-                                        <xsl:if test="$isPaypalExpressEnabled=1">
-                                            <span>P+</span>
-                                        </xsl:if>
-                                        <span>V+M+D+B</span>
+                                        <span>Total Payments (A+V+M+D+B</span>
                                         <xsl:if test="$isCashEnabled=1">
                                             <span>+C</span>
                                         </xsl:if>
@@ -830,19 +795,6 @@
                                 <xsl:value-of select="format-number($amextotaltillnow, '$#0.00;($#0.00)')" />
                             </td>
                         </tr>
-                        <xsl:if test="$isPaypalExpressEnabled=1">
-                            <tr>
-                                <td align="left">
-                                    <i>
-                                        <xsl:text disable-output-escaping="yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</xsl:text>
-                                        Total for Paypal Express (P)
-                                    </i>
-                                </td>
-                                <td align="left">
-                                    <xsl:value-of select="format-number($paypalexpresstotaltillnow, '$#0.00;($#0.00)')" />
-                                </td>
-                            </tr>
-                        </xsl:if>
                         <tr>
                             <td align="left">
                                 <i>
@@ -972,11 +924,7 @@
                         <tr style="border-bottom:solid 1px #000000; border-top: solid 1px black;">
                             <td align="left">
                                 <i>
-                                    <span>Total Payments (A+</span>
-                                    <xsl:if test="$isPaypalExpressEnabled=1">
-                                        <span>P+</span>
-                                    </xsl:if>
-                                    <span>V+M+D+B</span>
+                                    <span>Total Payments (A+V+M+D+B</span>
                                     <xsl:if test="$isCashEnabled=1">
                                         <span>+C</span>
                                     </xsl:if>
