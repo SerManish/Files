@@ -563,7 +563,7 @@
 			</xsl:variable>
 			<xsl:variable name="ipadswiperdiscroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperDISCRoAmount)" />
 			
-			<xsl:variable name="chipdiscsurcharges">
+			<xsl:variable name="chipdiscroamount">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/ChipDISCRoAmount"/>
 				</xsl:call-template>
