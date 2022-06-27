@@ -1507,7 +1507,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($amextotaltillnowsurcharges , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($amextotalsurchargestillnow , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -1518,7 +1518,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($amextotaltillnowroamount , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($amextotalroamounttillnow , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -1581,7 +1581,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($visatotaltillnowsurcharges + $mastertotaltillnowsurcharges + $disctotaltillnowsurcharges , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($visatotalsurchargestillnow + $mastertotalsurchargestillnow + $disctotalsurchargestillnow , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -1592,7 +1592,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($visatotaltillnowroamount + $mastertotaltillnowroamount + $disctotaltillnowroamount , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($visatotalroamounttillnow + $mastertotalroamounttillnow + $disctotalroamounttillnow , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -1700,7 +1700,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($departmenttotaltillnowsurcharges , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($departmenttotalsurchargestillnow , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -1711,7 +1711,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($departmenttotaltillnowroamount , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($departmenttotalroamounttillnow , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                </table>
