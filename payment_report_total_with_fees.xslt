@@ -1334,7 +1334,7 @@
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number($visatotalsurcharges + $mastertotalsurcharges + $disctotalsurcharges , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number($visatotalsurcharges + $masttotalsurcharges + $disctotalsurcharges , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 								<tr>
