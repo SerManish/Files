@@ -1463,11 +1463,11 @@
 									<td align="left" style="padding-left:30px;">
 										<i>
 											<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
-											Total Fees Try1
+											Total Fees
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number(departmenttotalsurcharges , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number($departmenttotalsurcharges , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 								<tr>
@@ -1478,7 +1478,7 @@
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number(departmenttotalroamount , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number($departmenttotalroamount , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 			                </table>
@@ -1710,7 +1710,7 @@
 	                        <td align="left" style="padding-left:30px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
-	                                Total Fees try2
+	                                Total Fees
 	                            </i>
 	                        </td>
 	                        <td align="left">
