@@ -427,7 +427,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($swipertotalamexsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -438,7 +438,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($swipertotalamexroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -501,7 +501,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($swipertotalvisasurcharges + $swipertotalmastsurcharges + $swipertotaldiscsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -512,7 +512,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($swipertotalvisaroamount + $swipertotalmastroamount + $swipertotaldiscroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -555,7 +555,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($swipertotalamexsurcharges + $swipertotalvisasurcharges + $swipertotalmastsurcharges + $swipertotaldiscsurcharges + $swipertotaldebitsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -566,7 +566,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($swipertotalamexroamount + $swipertotalvisaroamount + $swipertotalmastroamount + $swipertotaldiscroamount + $swipertotaldebitroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                </table>
@@ -609,7 +609,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualamexsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -620,7 +620,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualamexroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -683,7 +683,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualvisasurcharges + $onmanualmastsurcharges + $onmanualdiscsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -694,7 +694,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualvisaroamount + $onmanualmastroamount + $onmanualdiscroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -737,7 +737,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualamexsurcharges + $onmanualvisasurcharges + $onmanualmastsurcharges + $onmanualdiscsurcharges + $onmanualdebitsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -748,7 +748,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualamexroamount + $onmanualvisaroamount + $onmanualmastroamount + $onmanualdiscroamount + $onmanualdebitroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                </table>
@@ -792,7 +792,7 @@
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number($amextotalsurcharges , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 								<tr>
@@ -803,7 +803,7 @@
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number($amextotalroamount , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 			                    <tr>
@@ -866,7 +866,7 @@
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number($visatotalsurcharges + $mastertotalsurcharges + $disctotalsurcharges , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 								<tr>
@@ -877,7 +877,7 @@
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number($visatotalroamount + $mastertotalroamount + $disctotalroamount , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 			                    <tr>
@@ -985,7 +985,7 @@
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number(departmenttotalsurcharges , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 								<tr>
@@ -996,7 +996,7 @@
 										</i>
 									</td>
 									<td align="left">
-										<xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+										<xsl:value-of select="format-number(departmenttotalroamount , '$#0.00;($#0.00)')" />
 									</td>
 								</tr>
 			                </table>
@@ -1039,7 +1039,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($amextotaltillnowsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -1050,7 +1050,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($amextotaltillnowroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -1113,7 +1113,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($visatotaltillnowsurcharges + $mastertotaltillnowsurcharges + $disctotaltillnowsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -1124,7 +1124,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($visatotaltillnowroamount + $mastertotaltillnowroamount + $disctotaltillnowroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -1232,7 +1232,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($departmenttotaltillnowsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -1243,7 +1243,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number(0 , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($departmenttotaltillnowroamount , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                </table>
