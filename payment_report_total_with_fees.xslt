@@ -59,6 +59,104 @@
 			</xsl:variable>
 			<xsl:variable name="onlineamextillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineAMEX)" />
 			
+			<xsl:variable name="swiperamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/SwiperAMEXSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="swiperamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/SwiperAMEXSurcharges)" />
+			
+			<xsl:variable name="ipadswiperamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadSwiperAMEXSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadswiperamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperAMEXSurcharges)" />
+			
+			<xsl:variable name="chipamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ChipAMEXSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="chipamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ChipAMEXSurcharges)" />
+			
+			<xsl:variable name="ipadchipamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadChipAMEXSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadchipamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadChipAMEXSurcharges)" />
+			
+			<xsl:variable name="manualamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ManualAMEXSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="manualamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ManualAMEXSurcharges)" />
+			
+			<xsl:variable name="ipadmanualamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadManualAMEXSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadmanualamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadManualAMEXSurcharges)" />
+			
+			<xsl:variable name="onlineamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/OnlineAMEXSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="onlineamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineAMEXSurcharges)" />
+			
+			<xsl:variable name="swiperamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/SwiperAMEXRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="swiperamexroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/SwiperAMEXRoAmount)" />
+			
+			<xsl:variable name="ipadswiperamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadSwiperAMEXRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadswiperamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperAMEXRoAmount)" />
+			
+			<xsl:variable name="chipamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ChipAMEXRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="chipamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ChipAMEXRoAmount)" />
+			
+			<xsl:variable name="ipadchipamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadChipAMEXRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadchipamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadChipAMEXRoAmount)" />
+			
+			<xsl:variable name="manualamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ManualAMEXRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="manualamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ManualAMEXRoAmount)" />
+			
+			<xsl:variable name="ipadmanualamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadManualAMEXRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadmanualamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadManualAMEXRoAmount)" />
+			
+			<xsl:variable name="onlineamexsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/OnlineAMEXRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="onlineamexsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineAMEXRoAmount)" />
+
 			<xsl:variable name="swipervisa">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/SwiperVISA"/>
@@ -108,6 +206,104 @@
 			</xsl:variable>
 			<xsl:variable name="onlinevisatillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineVISA)" />
 			
+			<xsl:variable name="swipervisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/SwiperVISASurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="swipervisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/SwiperVISASurcharges)" />
+			
+			<xsl:variable name="ipadswipervisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadSwiperVISASurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadswipervisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperVISASurcharges)" />
+			
+			<xsl:variable name="chipvisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ChipVISASurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="chipvisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ChipVISASurcharges)" />
+			
+			<xsl:variable name="ipadchipvisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadChipVISASurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadchipvisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadChipVISASurcharges)" />
+			
+			<xsl:variable name="manualvisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ManualVISASurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="manualvisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ManualVISASurcharges)" />
+			
+			<xsl:variable name="ipadmanualvisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadManualVISASurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadmanualvisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadManualVISASurcharges)" />
+			
+			<xsl:variable name="onlinevisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/OnlineVISASurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="onlinevisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineVISASurcharges)" />
+			
+			<xsl:variable name="swipervisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/SwiperVISARoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="swipervisaroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/SwiperVISARoAmount)" />
+			
+			<xsl:variable name="ipadswipervisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadSwiperVISARoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadswipervisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperVISARoAmount)" />
+			
+			<xsl:variable name="chipvisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ChipVISARoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="chipvisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ChipVISARoAmount)" />
+			
+			<xsl:variable name="ipadchipvisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadChipVISARoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadchipvisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadChipVISARoAmount)" />
+			
+			<xsl:variable name="manualvisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ManualVISARoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="manualvisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ManualVISARoAmount)" />
+			
+			<xsl:variable name="ipadmanualvisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadManualVISARoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadmanualvisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadManualVISARoAmount)" />
+			
+			<xsl:variable name="onlinevisasurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/OnlineVISARoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="onlinevisasurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineVISARoAmount)" />
+
 			<xsl:variable name="swipermast">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/SwiperMAST"/>
@@ -156,7 +352,105 @@
 				</xsl:call-template>
 			</xsl:variable>
 			<xsl:variable name="onlinemasttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineMAST)" />
+				
+			<xsl:variable name="swipermastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/SwiperMASTSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="swipermastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/SwiperMASTSurcharges)" />
 			
+			<xsl:variable name="ipadswipermastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadSwiperMASTSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadswipermastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperMASTSurcharges)" />
+			
+			<xsl:variable name="chipmastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ChipMASTSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="chipmastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ChipMASTSurcharges)" />
+			
+			<xsl:variable name="ipadchipmastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadChipMASTSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadchipmastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadChipMASTSurcharges)" />
+			
+			<xsl:variable name="manualmastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ManualMASTSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="manualmastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ManualMASTSurcharges)" />
+			
+			<xsl:variable name="ipadmanualmastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadManualMASTSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadmanualmastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadManualMASTSurcharges)" />
+			
+			<xsl:variable name="onlinemastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/OnlineMASTSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="onlinemastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineMASTSurcharges)" />
+			
+			<xsl:variable name="swipermastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/SwiperMASTRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="swipermastroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/SwiperMASTRoAmount)" />
+			
+			<xsl:variable name="ipadswipermastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadSwiperMASTRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadswipermastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperMASTRoAmount)" />
+			
+			<xsl:variable name="chipmastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ChipMASTRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="chipmastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ChipMASTRoAmount)" />
+			
+			<xsl:variable name="ipadchipmastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadChipMASTRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadchipmastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadChipMASTRoAmount)" />
+			
+			<xsl:variable name="manualmastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ManualMASTRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="manualmastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ManualMASTRoAmount)" />
+			
+			<xsl:variable name="ipadmanualmastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadManualMASTRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadmanualmastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadManualMASTRoAmount)" />
+			
+			<xsl:variable name="onlinemastsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/OnlineMASTRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="onlinemastsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineMASTRoAmount)" />
+
 			<xsl:variable name="swiperdisc">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/SwiperDISC"/>
@@ -206,6 +500,105 @@
 			</xsl:variable>
 			<xsl:variable name="onlinedisctillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineDISC)" />
 			
+						
+			<xsl:variable name="swiperdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/SwiperDISCSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="swiperdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/SwiperDISCSurcharges)" />
+			
+			<xsl:variable name="ipadswiperdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadSwiperDISCSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadswiperdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperDISCSurcharges)" />
+			
+			<xsl:variable name="chipdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ChipDISCSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="chipdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ChipDISCSurcharges)" />
+			
+			<xsl:variable name="ipadchipdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadChipDISCSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadchipdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadChipDISCSurcharges)" />
+			
+			<xsl:variable name="manualdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ManualDISCSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="manualdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ManualDISCSurcharges)" />
+			
+			<xsl:variable name="ipadmanualdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadManualDISCSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadmanualdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadManualDISCSurcharges)" />
+			
+			<xsl:variable name="onlinediscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/OnlineDISCSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="onlinediscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineDISCSurcharges)" />
+			
+			<xsl:variable name="swiperdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/SwiperDISCRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="swiperdiscroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/SwiperDISCRoAmount)" />
+			
+			<xsl:variable name="ipadswiperdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadSwiperDISCRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadswiperdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadSwiperDISCRoAmount)" />
+			
+			<xsl:variable name="chipdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ChipDISCRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="chipdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ChipDISCRoAmount)" />
+			
+			<xsl:variable name="ipadchipdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadChipDISCRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadchipdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadChipDISCRoAmount)" />
+			
+			<xsl:variable name="manualdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/ManualDISCRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="manualdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/ManualDISCRoAmount)" />
+			
+			<xsl:variable name="ipadmanualdiscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/IpadManualDISCRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="ipadmanualdiscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/IpadManualDISCRoAmount)" />
+			
+			<xsl:variable name="onlinediscsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/OnlineDISCRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="onlinediscsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/OnlineDISCRoAmount)" />
+
 			<xsl:variable name="swiperdebit">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/SwiperDEBIT"/>
@@ -262,6 +655,20 @@
 			</xsl:variable>
 			<xsl:variable name="amextotaltillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/AMEXTotal)" />
 			
+			<xsl:variable name="amextotalsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/AMEXTotalSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="amextotalsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/AMEXTotalSurcharges)" />
+
+			<xsl:variable name="amextotalroamount">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/AMEXTotalRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="amextotalroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/AMEXTotalRoAmount)" />
+
 			<xsl:variable name="visatotal">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/VISATotal"/>
@@ -269,6 +676,20 @@
 			</xsl:variable>
 			<xsl:variable name="visatotaltillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/VISATotal)" />
 			
+			<xsl:variable name="visatotalsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/VISATotalSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="visatotalsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/VISATotalSurcharges)" />
+
+			<xsl:variable name="visatotalroamount">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/VISATotalRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="visatotalroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/VISATotalRoAmount)" />
+
 			<xsl:variable name="mastertotal">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/MASTTotal"/>
@@ -276,6 +697,20 @@
 			</xsl:variable>
 			<xsl:variable name="mastertotaltillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/MASTTotal)" />
 			
+			<xsl:variable name="masttotalsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/MASTTotalSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="masttotalsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/MASTTotalSurcharges)" />
+
+			<xsl:variable name="masttotalroamount">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/MASTTotalRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="masttotalroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/MASTTotalRoAmount)" />
+
 			<xsl:variable name="disctotal">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/DISCTotal"/>
@@ -283,6 +718,20 @@
 			</xsl:variable>
 			<xsl:variable name="disctotaltillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/DISCTotal)" />
 			
+			<xsl:variable name="disctotalsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/DISCTotalSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="disctotalsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/DISCTotalSurcharges)" />
+
+			<xsl:variable name="disctotalroamount">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/DISCTotalRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="disctotalroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/DISCTotalRoAmount)" />
+
 			<xsl:variable name="debittotal">
 				<xsl:call-template name="get-number-from-string">
 					<xsl:with-param name="input" select="current()/DEBITTotal"/>
