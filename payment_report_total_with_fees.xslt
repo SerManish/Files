@@ -815,6 +815,20 @@
 				</xsl:call-template>
 			</xsl:variable>
 			<xsl:variable name="departmenttotaltillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/DepartmentTotal)" />
+
+			<xsl:variable name="departmenttotalsurcharges">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/DepartmentTotalSurcharges"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="departmenttotalsurchargestillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/DepartmentTotalSurcharges)" />
+
+			<xsl:variable name="departmenttotalroamount">
+				<xsl:call-template name="get-number-from-string">
+					<xsl:with-param name="input" select="current()/DepartmentTotalRoAmount"/>
+				</xsl:call-template>
+			</xsl:variable>
+			<xsl:variable name="departmenttotalroamounttillnow" select="sum(/*/Departments/Department[position() &lt;= $index]/DepartmentTotalRoAmount)" />
 			
 			<xsl:variable name="grossTotalLine">
 				<xsl:choose>
