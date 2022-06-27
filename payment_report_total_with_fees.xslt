@@ -777,6 +777,26 @@
 			<xsl:variable name="onmanualmast" select="$manualmast + $ipadmanualmast + $onlinemast" />
 			<xsl:variable name="onmanualdisc" select="$manualdisc + $ipadmanualdisc + $onlinedisc" />
 			<xsl:variable name="onmanualdebit" select="$manualdebit + $ipadmanualdebit + $onlinedebit" />
+
+			<xsl:variable name="swipertotalamexsurcharges" select="$swiperamexsurcharges + $ipadswiperamexsurcharges + $chipamexsurcharges + $ipadchipamexsurcharges" />
+			<xsl:variable name="swipertotalvisasurcharges" select="$swipervisasurcharges + $ipadswipervisasurcharges + $chipvisasurcharges + $ipadchipvisasurcharges" />
+			<xsl:variable name="swipertotalmastsurcharges" select="$swipermastsurcharges + $ipadswipermastsurcharges + $chipmastsurcharges + $ipadchipmastsurcharges" />
+			<xsl:variable name="swipertotaldiscsurcharges" select="$swiperdiscsurcharges + $ipadswiperdiscsurcharges + $chipdiscsurcharges + $ipadchipdiscsurcharges" />
+	
+			<xsl:variable name="onmanualamexsurcharges" select="$manualamexsurcharges + $ipadmanualamexsurcharges + $onlineamexsurcharges" />
+			<xsl:variable name="onmanualvisasurcharges" select="$manualvisasurcharges + $ipadmanualvisasurcharges + $onlinevisasurcharges" />
+			<xsl:variable name="onmanualmastsurcharges" select="$manualmastsurcharges + $ipadmanualmastsurcharges + $onlinemastsurcharges" />
+			<xsl:variable name="onmanualdiscsurcharges" select="$manualdiscsurcharges + $ipadmanualdiscsurcharges + $onlinediscsurcharges" />
+
+			<xsl:variable name="swipertotalamexroamount" select="$swiperamexroamount + $ipadswiperamexroamount + $chipamexroamount + $ipadchipamexroamount" />
+			<xsl:variable name="swipertotalvisaroamount" select="$swipervisaroamount + $ipadswipervisaroamount + $chipvisaroamount + $ipadchipvisaroamount" />
+			<xsl:variable name="swipertotalmastroamount" select="$swipermastroamount + $ipadswipermastroamount + $chipmastroamount + $ipadchipmastroamount" />
+			<xsl:variable name="swipertotaldiscroamount" select="$swiperdiscroamount + $ipadswiperdiscroamount + $chipdiscroamount + $ipadchipdiscroamount" />
+	
+			<xsl:variable name="onmanualamexroamount" select="$manualamexroamount + $ipadmanualamexroamount + $onlineamexroamount" />
+			<xsl:variable name="onmanualvisaroamount" select="$manualvisaroamount + $ipadmanualvisaroamount + $onlinevisaroamount" />
+			<xsl:variable name="onmanualmastroamount" select="$manualmastroamount + $ipadmanualmastroamount + $onlinemastroamount" />
+			<xsl:variable name="onmanualdiscroamount" select="$manualdiscroamount + $ipadmanualdiscroamount + $onlinediscroamount" />
 			
 			<xsl:variable name="swipertotalamextillnow" select="$swiperamextillnow + $ipadswiperamextillnow + $chipamextillnow + $ipadchipamextillnow" />
 			<xsl:variable name="swipertotalvisatillnow" select="$swipervisatillnow + $ipadswipervisatillnow + $chipvisatillnow + $ipadchipvisatillnow" />
@@ -1004,7 +1024,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($swipertotalamexsurcharges + $swipertotalvisasurcharges + $swipertotalmastsurcharges + $swipertotaldiscsurcharges + $swipertotaldebitsurcharges , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($swipertotalamexsurcharges + $swipertotalvisasurcharges + $swipertotalmastsurcharges + $swipertotaldiscsurcharges, '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -1015,7 +1035,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($swipertotalamexroamount + $swipertotalvisaroamount + $swipertotalmastroamount + $swipertotaldiscroamount + $swipertotaldebitroamount , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($swipertotalamexroamount + $swipertotalvisaroamount + $swipertotalmastroamount + $swipertotaldiscroamount + $swipertotaldebit , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                </table>
@@ -1186,7 +1206,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($onmanualamexsurcharges + $onmanualvisasurcharges + $onmanualmastsurcharges + $onmanualdiscsurcharges + $onmanualdebitsurcharges , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualamexsurcharges + $onmanualvisasurcharges + $onmanualmastsurcharges + $onmanualdiscsurcharges , '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 						<tr>
@@ -1197,7 +1217,7 @@
 	                            </i>
 	                        </td>
 	                        <td align="left">
-	                            <xsl:value-of select="format-number($onmanualamexroamount + $onmanualvisaroamount + $onmanualmastroamount + $onmanualdiscroamount + $onmanualdebitroamount , '$#0.00;($#0.00)')" />
+	                            <xsl:value-of select="format-number($onmanualamexroamount + $onmanualvisaroamount + $onmanualmastroamount + $onmanualdiscroamount + $onmanualdebit, '$#0.00;($#0.00)')" />
 	                        </td>
 	                    </tr>
 	                </table>
