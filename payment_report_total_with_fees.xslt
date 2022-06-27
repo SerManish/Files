@@ -1710,7 +1710,7 @@
 	                        <td align="left" style="padding-left:30px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
-	                                Total Fees
+	                                Total Fees try2
 	                            </i>
 	                        </td>
 	                        <td align="left">
