@@ -1033,7 +1033,7 @@
 	                        <td align="left" style="padding-left:30px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
-	                                Total Fees *****Gross*****
+	                                Total Fees
 	                            </i>
 	                        </td>
 	                        <td align="left">
@@ -1044,7 +1044,7 @@
 	                        <td align="left" style="padding-left:30px;">
 	                            <i>
 	                                <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
-	                                Total Net Deposit *****Gross*****
+	                                Total Net Deposit
 	                            </i>
 	                        </td>
 	                        <td align="left">
